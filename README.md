@@ -2,11 +2,11 @@
 
 This is a working repository for our style guides. The styleguide for each language/environment will be stored in its own markdown file.
 
-[CSS](https://github.com/commonmedia/styleguide/blob/master/css.md)
-[HTML](https://github.com/commonmedia/styleguide/blob/master/html.md)
-[JavaScript](https://github.com/commonmedia/styleguide/blob/master/javascript.md)
-[PHP](https://github.com/commonmedia/styleguide/blob/master/php.md)
-[Ruby](https://github.com/commonmedia/styleguide/blob/master/ruby.md)
+* [CSS](https://github.com/commonmedia/styleguide/blob/master/css.md)
+* [HTML](https://github.com/commonmedia/styleguide/blob/master/html.md)
+* [JavaScript](https://github.com/commonmedia/styleguide/blob/master/javascript.md)
+* [PHP](https://github.com/commonmedia/styleguide/blob/master/php.md)
+* [Ruby](https://github.com/commonmedia/styleguide/blob/master/ruby.md)
 
 # Common Inspiration
 * [https://github.com/styleguide/ruby](https://github.com/styleguide/ruby)
