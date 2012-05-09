@@ -87,11 +87,11 @@
   ```
 
 * Never put a space between a method name and the opening parenthesis.
-  `
+  ```Ruby
   # bad
   f (3 + 2) + 1
 
   # good
   f(3 + 2) + 1
-  `
+  ```
   
