@@ -2,7 +2,7 @@
 
 ## Git Branch Usage
 
-1. Create `taging-YYYYMMDD` branch
+1. Create `staging-YYYYMMDD` branch
 1. Pull current `master` branch into `staging` branch
 1. Develop new features/fixes in a new branch that's specific to that feature/fix … Ideally, these branch names would follow a `feature/fix-name-ticketnumber` format, like `gourmet-stores-page-5538`
 1. Pull from any branches that need to be tested into the `staging-YYYYMMDD` branch
