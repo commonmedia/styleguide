@@ -1,21 +1,21 @@
 # Using git
 
+This assumes the repository has a `staging` branch, which was created off the `master` branch.
+
 ## Git Branch Usage
 
-1. Create `staging-YYYYMMDD` branch
-1. Pull current `master` branch into `staging` branch
-1. Develop new features/fixes in a new branch that's specific to that feature/fix … Ideally, these branch names would follow a `feature/fix-name-ticketnumber` format, like `gourmet-stores-page-5538`
-1. Pull from any branches that need to be tested into the `staging-YYYYMMDD` branch
-1. Deploy `staging-YYYYMMDD` branch to staging server
-1. Test
-1. Any necessary changes/fixes for customer approval are made on their respective branches, then pulled back into the `staging-YYYYMMDD` branch
-1. If everything is approved, pull `staging-YYYYMMDD` branch into `master` branch … If only one or some features are approved, pull their respective branches into `master` branch
-1. Deploy `master` branch to production server
-1. ...repeat as necessary
+1. Create a new branch for your feature, off of the `master` branch. Ideally, this branch name would follow a `name-ticketnumber` format, like `slider-navigation-4856`
+2. Develop new features/fixes in this new `name-ticketnumber` branch
+3. When you need your feature on staging, checkout the `staging` branch, and merge in your `name-ticketnumber` branch
+4. Deploy the `staging` branch to the staging server (typically with `cap staging deploy`)
+5. Test your feature/fix
+6. If you need to make more changes to your feature/fix, checkout your `name-ticketnumber` branch to make those changes - Any necessary changes/fixes are made on their respective branches (not on `staging` or `master` branchces)
+7. Repeat steps 3-6,  until your feature/fix is ready for production
+8. If everything is approved, checkout the `master` branch, and merge in your `name-ticketnumber` branch (If the entirety of the `staging` branch is deployable, then you can merge in that branch instead)
+9. Deploy `master` branch to production server (typically with `cap production deploy`)
 
 ## Core Ideals
 
 * No edits are done on the `master` branch itself
 * Each feature/fix has its own branch
-* One feature/fix can never hold up the deployment of another feature/fix 
-* The `staging` branch is disposable
+* One feature/fix can never hold up the deployment of another feature/fix
