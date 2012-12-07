@@ -1,8 +1,22 @@
 # Using git
 
-This assumes the repository has a `staging` branch, which was created off the `master` branch.
+## Git Commit Messages
+
+* If the commit involves migrations, precede the commit message with `(M)`
+* End each commit with a reference to the ticket number, if applicable, in the format `refs #5555`
+* Keep Gem updates in separate commits
+* For Gem update commits, the commit message format is:
+
+```
+gem update:
+
+[gem-name] to [version]
+[gem-name] to [version]
+```
 
 ## Git Branch Usage
+
+This assumes the repository has a `staging` branch, which was created off the `master` branch.
 
 1. Create a new branch for your feature, off of the `master` branch. Ideally, this branch name would follow a `name-ticketnumber` format, like `slider-navigation-4856`
 2. Develop new features/fixes in this new `name-ticketnumber` branch
