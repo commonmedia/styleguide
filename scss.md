@@ -7,7 +7,9 @@
 3. Seperate components and abstract styles as much as possible
 4. Indent properly and consistantly
 5. Try to have css properties be in as close to alphabetical order as is reasonable
-6. Styleguide Example Code
+6. One line per property
+
+Styleguide Example Code
 
 ```
 	.myClass {
